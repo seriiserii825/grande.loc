@@ -7,3 +7,24 @@
          url('../fonts/intro.ttf') format('truetype'),
          url('../fonts/intro.svg#8289') format('svg');
 }
+
+@font-face {
+	font-family: 'Liberation Sans';
+	src: url('../fonts/LiberationSans/LiberationSans.eot');
+	src: local('Liberation Sans'), local('LiberationSans'),
+		url('../fonts/LiberationSans/LiberationSans.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/LiberationSans/LiberationSans.woff') format('woff'),
+		url('../fonts/LiberationSans/LiberationSans.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vegur';
+    src: url('../fonts/Vegur/Vegur.eot');
+    src: url('../fonts/Vegur/Vegur.eot') format('embedded-opentype'),
+         url('../fonts/Vegur/Vegur.woff2') format('woff2'),
+         url('../fonts/Vegur/Vegur.woff') format('woff'),
+         url('../fonts/Vegur/Vegur.ttf') format('truetype'),
+         url('../fonts/Vegur/Vegur.svg#Vegur') format('svg');
+}

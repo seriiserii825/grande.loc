@@ -3,33 +3,12 @@
 @import "partials/variables";
 @import "partials/mixins";
 
-html,
-body{
-  font-size: 14px;
-}
-
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
-  color: $white;
-  background: #bbb;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0;
-    padding: 0;
+  font-family: 'Vegur', sans-serif;
+  font-family: 'Liberation Sans', sans-serif;
+  font-size: 15px;
+  color: $text-color;
+  background: #c6b385;
 }
 
 a {
@@ -40,3 +19,106 @@ a {
         text-decoration: none;
     }
 }
+
+.s-container-big {
+  margin: 0 auto;
+  max-width: 1200px;
+  min-height: 400px;
+  background: $white;
+}
+
+.s-container {
+  margin: 0 auto;
+  max-width: 1160px;
+  padding: 0 10px;
+}
+
+.s-header {
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 7px;
+    background: $accent;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 10px;
+    background: $border-color;
+    z-index: 0;
+  }
+
+  .s-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 115px;
+  }
+}
+//s-header
+
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-start;
+  z-index: 1;
+
+  &__link {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 11px;
+    width: 80px;
+    height: 80px;
+    color: #6b6d6e;
+    border: 1px solid transparent;
+    border-top: 0;
+    transition: all .2s ease;
+
+    &::after {
+      transition: all .3s ease;
+    }
+
+    &:hover,
+    &-active {
+      color: $white;
+      background: $accent;
+      border: 1px solid $border-color;
+      border-top: 0;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        display: block;
+        width: 100%;
+        height: 7px;
+        background: $accent-dark;
+      }
+    }
+  }//menu__link
+}//menu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
